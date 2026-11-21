@@ -1,0 +1,48 @@
+# GitHub & LinkedIn Professional Growth Dashboard — configuration
+username: sukhada30github
+profile_url: https://github.com/sukhada30github
+profile_created_at: "2023-07-11"
+data_source: "Public GitHub REST API (https://api.github.com/users/sukhada30github/repos?per_page=100&sort=created)"
+collected_at: "2026-11-21"
+# Categories used in the dashboard. A repo is assigned by name/description signals only;
+# no category is inferred from a language alone.
+categories:
+  "AWS & Cloud Computing":
+    - AWS-BY-SN
+    - AWS-Projects
+    - apache-server-visual
+    - Application-load-balancer-visual
+    - Bastion-Host-Visual
+    - AWS-BY-Sukhada
+    - 3-Tier-Web-Application-Project-by-Sukhada
+    - 3-Tier-Web-Project-by---SW
+    - 3-Tier-Visual
+    - TCO-CapEx-OpEx-Visual
+  "Jenkins & CI/CD":
+    - Jenkins-Project
+    - Jenkins-Netflix-Project
+    - Jenkins-Demo-App-Project
+  "HTML, CSS & JavaScript":
+    - Nginx-Netflix-Page
+    - saas-landing-page
+    - Nginx-Verse-Project
+    - Nginx-Visual
+  "Learning & Practice Projects":
+    - MySecondGit
+    - NewGit
+    - QuizApplication
+    - micro-service
+  "Personal Projects":
+    - Sukhada-Portfolio
+    - sukhada30github
+  "DevOps Engineering":
+    - Production-Outage-Question-Book
+  "Linux & Shell Scripting":
+    - Nginx-server-visual
+linkedin:
+  status: "No data — awaiting official LinkedIn export"
+  template: "data/linkedin_template.csv"
+  categories: [AWS, DevOps, Docker, Kubernetes, Jenkins, Linux, Python, "Cloud Projects", "Learning Journey", "Career Development"]
+dashboard:
+  theme: "dark navy and blue, Power BI-inspired"
+  refresh: "Re-run python github_collector.py to refresh data/repos.json and data/repos.csv"

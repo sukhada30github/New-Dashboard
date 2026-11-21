@@ -1,0 +1,5 @@
+date,post_title,category,impressions,reactions,comments,reposts,followers,profile_views,search_appearances
+# NOTE: No LinkedIn data yet — awaiting official LinkedIn export. Do not fill in invented numbers.
+# How to use: export your LinkedIn analytics from LinkedIn (official export), copy the values into this file, one row per post, then run: python linkedin_import.py
+# Categories allowed: AWS, DevOps, Docker, Kubernetes, Jenkins, Linux, Python, Cloud Projects, Learning Journey, Career Development
+# Example row format (do NOT treat as real data): 2026-11-01,Example post title,Learning Journey,,,,,,,

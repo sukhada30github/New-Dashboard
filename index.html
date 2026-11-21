@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub &amp; LinkedIn Professional Growth Dashboard — sukhada30github</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header>
+  <h1>Professional Growth Intelligence Dashboard</h1>
+  <p>GitHub: <strong>sukhada30github</strong> — <a style="color:#fff" href="https://github.com/sukhada30github">github.com/sukhada30github</a> &nbsp;|&nbsp; Profile created 11 July 2023 &nbsp;|&nbsp; Followers 1 &nbsp;|&nbsp; Following 0</p>
+  <p class="meta">Source: Public GitHub REST API, collected 2026-11-21. 25 public repositories. Stars, forks and watchers are 0 for every repo — real API values, not missing data. Commits, branches, releases, closed issues, topics and README availability are marked “unavailable” — they were not in the API response used here and are not treated as zero.</p>
+</header>
+<main class="wrap">
+
+  <section class="kpis" aria-label="Executive KPIs">
+    <div class="kpi"><div class="label">Total repositories</div><div class="value">25</div><div class="sub">25 public · 0 private</div></div>
+    <div class="kpi"><div class="label">Total stars</div><div class="value">0</div><div class="sub">Across all 25 repos</div></div>
+    <div class="kpi"><div class="label">Total forks</div><div class="value">0</div><div class="sub">Forks received: 0 · 2 repos are forks</div></div>
+    <div class="kpi"><div class="label">Languages</div><div class="value">4</div><div class="sub">JavaScript 7 · HTML 5 · Java 4 · Not listed 9</div></div>
+    <div class="kpi"><div class="label">Most-used language</div><div class="value" style="font-size:22px">JavaScript</div><div class="sub">7 of 25 repos</div></div>
+    <div class="kpi"><div class="label">Oldest repo</div><div class="value" style="font-size:18px">MySecondGit</div><div class="sub">14 Jul 2023</div></div>
+    <div class="kpi"><div class="label">Newest repo</div><div class="value" style="font-size:18px">TCO-CapEx-OpEx-Visual</div><div class="sub">1 Nov 2026</div></div>
+    <div class="kpi"><div class="label">Created in 2026</div><div class="value">21</div><div class="sub">4 in 2023 · 21 in 2026 · 0 in 2024–25</div></div>
+  </section>
+
+  <section class="card">
+    <h2>Filters</h2>
+    <div class="filters">
+      <label>Year <select id="fYear"><option value="">All years</option><option>2023</option><option>2026</option></select></label>
+      <label>Language <select id="fLang"><option value="">All languages</option><option>JavaScript</option><option>HTML</option><option>Java</option><option>Not listed</option></select></label>
+      <label>Category <select id="fCat"><option value="">All categories</option><option>AWS &amp; Cloud Computing</option><option>Jenkins &amp; CI/CD</option><option>HTML, CSS &amp; JavaScript</option><option>Learning &amp; Practice Projects</option><option>Personal Projects</option><option>DevOps Engineering</option><option>Linux &amp; Shell Scripting</option></select></label>
+      <label>Search <input id="fSearch" type="search" placeholder="Repo name or description"></label>
+      <button id="btnCsv" type="button">Export filtered CSV</button>
+      <button id="btnReset" type="button" class="secondary">Reset filters</button>
+    </div>
+    <p style="font-size:13px;color:#64748b">Filters update the table and the language, category and activity charts. The timeline always shows the full history so growth is not hidden by a filter.</p>
+  </section>
+
+  <section class="card">
+    <h2>Executive Overview — charts</h2>
+    <div class="grid2">
+      <div><h3>1 · Repository creation timeline (cumulative)</h3><canvas id="chTimeline" height="220"></canvas><p>Flat from Sep 2023 to Aug 2026, then a sharp rise: 1 in Aug 2026, 16 in Oct 2026, 4 in Nov 2026.</p></div>
+      <div><h3>2 · Language distribution</h3><canvas id="chLang" height="220"></canvas><p>JavaScript is the most-used primary language (7/25). 9 repos have no primary language listed — usually docs, notes or visual-only repos.</p></div>
+      <div><h3>3 · Repository categories</h3><canvas id="chCat" height="260"></canvas><p>AWS &amp; Cloud Computing dominates (10/25), followed by HTML/CSS/JavaScript (4), Learning &amp; Practice (4) and Jenkins &amp; CI/CD (3).</p></div>
+      <div><h3>4 · Activity — repos created per month (filtered)</h3><canvas id="chActivity" height="260"></canvas><p>Activity is not consistent over time: it is concentrated in Oct–Nov 2026. Do not read updated_at as commit activity — commit counts are unavailable in this dataset.</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Senior Data Analyst Insights — what the evidence actually shows</h2>
+    <ul>
+      <li><strong>Journey:</strong> Started July 2023 with Java learning repos (MySecondGit, NewGit, QuizApplication), then a long gap with no new repos in 2024–2025, then a return in Aug–Nov 2026 focused on AWS, Jenkins, Nginx and 3-tier web projects.</li>
+      <li><strong>Focus:</strong> The 2026 work is consistently AWS/DevOps-themed: 3-tier architecture, load balancer, bastion host, Apache/Nginx visuals, Jenkins CI/CD and a TCO (CapEx/OpEx) visual. That is a coherent Cloud Engineer / DevOps portfolio thread.</li>
+      <li><strong>Complexity:</strong> Project scope has increased — from single-file Java practice in 2023 to multi-component 3-tier and CI/CD projects in 2026. Complexity is judged from repo names/descriptions, not from commit counts, which are unavailable.</li>
+      <li><strong>Consistency:</strong> Not consistent. The evidence is burst activity in Oct–Nov 2026 (20 of 25 repos in about 7 weeks). Sustained, spaced practice would be stronger evidence than a burst.</li>
+      <li><strong>Visibility gap:</strong> 0 stars, 0 forks received, 0 watchers and 1 follower across all 25 repos. That is the biggest portfolio risk — the work exists, but it is not yet discoverable or endorsed.</li>
+      <li><strong>Documentation gap:</strong> Only 5 of 25 repos have a description in the API data (AWS-BY-SN, AWS-Projects, Jenkins-Project, saas-landing-page, and the profile repo note in app.js). Add a README and a description to every repo, starting with AWS-Projects, 3-Tier-Web-Project-by---SW and Jenkins-Netflix-Project.</li>
+      <li><strong>Missing skills in the portfolio:</strong> No repos in this dataset are categorised as Docker &amp; Containerization, Kubernetes, Infrastructure as Code (Terraform/CloudFormation), Python Programming, or Monitoring &amp; Observability. Those are the clearest gaps for a Cloud/DevOps target role.</li>
+      <li><strong>Portfolio highlights:</strong> 3-Tier-Web-Project-by---SW, AWS-Projects, Jenkins-Project (Netflix + CI/CD), Production-Outage-Question-Book, and TCO-CapEx-OpEx-Visual — they best demonstrate practical AWS/DevOps thinking.</li>
+    </ul>
+    <h3>Recommendations &amp; action plan</h3>
+    <ol>
+      <li>Add README + description + topics to all 25 repos, starting with the 5 highlights above.</li>
+      <li>Ship one Docker and one Kubernetes project, then one Terraform project, to close the three biggest skill gaps.</li>
+      <li>Publish one LinkedIn post per completed project (see Combined Intelligence below) — that is how 0 stars / 1 follower starts to move.</li>
+      <li>Keep a steady cadence (for example 1 repo or 1 meaningful update per week) instead of bursts, so the timeline shows consistency.</li>
+      <li>Re-run <code>python github_collector.py</code> monthly and refresh this dashboard; do not edit the numbers by hand.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>GitHub Repository Intelligence — all 25 repositories</h2>
+    <p id="repoCount">25 of 25 repositories shown</p>
+    <div style="overflow:auto">
+    <table>
+      <thead><tr><th>Repository</th><th>Description</th><th>Created</th><th>Language</th><th>Category</th><th>Stars</th><th>Forks</th><th>Commits</th></tr></thead>
+      <tbody id="repoBody"></tbody>
+    </table>
+    </div>
+    <p style="font-size:13px;color:#64748b">Commits are “unavailable” for every repo in this dataset — the column is not a zero. Full data, including updated_at and pushed_at, is in <code>data/repos.json</code> and <code>data/repos.csv</code>.</p>
+  </section>
+
+  <section class="card">
+    <h2>LinkedIn Growth Analytics</h2>
+    <div class="empty"><strong>No data — awaiting official LinkedIn export.</strong><br>No followers, profile views, search appearances, impressions, reactions, comments or reposts are shown here, because no LinkedIn data was supplied and no private LinkedIn data was scraped or assumed.</div>
+    <h3>How to add LinkedIn data</h3>
+    <ol>
+      <li>Export your official LinkedIn analytics.</li>
+      <li>Copy the values into <code>data/linkedin_template.csv</code> (columns: date, post_title, category, impressions, reactions, comments, reposts, followers, profile_views, search_appearances).</li>
+      <li>Run <code>python linkedin_import.py</code> — it writes <code>data/linkedin_summary.json</code> and will refuse to invent data if the file is empty or missing.</li>
+      <li>Categories to use: AWS, DevOps, Docker, Kubernetes, Jenkins, Linux, Python, Cloud Projects, Learning Journey, Career Development.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>Combined Career Growth Intelligence</h2>
+    <p>With LinkedIn data absent, no GitHub → LinkedIn correlation can be measured yet. The conversion plan below is a plan, not a result:</p>
+    <ul>
+      <li>GitHub project created → LinkedIn technical post published: start with Jenkins-Project and 3-Tier-Web-Project-by---SW.</li>
+      <li>Technology learned → related repository created: document each new AWS service in AWS-Projects, then post the learning.</li>
+      <li>Project completed → LinkedIn project showcase: use Sukhada-Portfolio to link the 5 highlight repos.</li>
+      <li>GitHub activity increased → professional content consistency: post weekly while building, not only after a burst.</li>
+    </ul>
+    <div class="note"><strong>Data quality note.</strong> Source: public GitHub REST API, <code>https://api.github.com/users/sukhada30github/repos?per_page=100&amp;sort=created</code>, collected 2026-11-21. Profile: created 2023-07-11, followers 1, following 0, public repos 25, public gists 0. The MCP search returned 23 repos; the API returned 25 — the 2 extra are the forks AWS-BY-SN and saas-landing-page. No duplicate repos. Lifetime metrics (stars/forks/watchers) are current totals, not historical. Updated_at is not a commit count.</div>
+  </section>
+</main>
+<footer>GitHub &amp; LinkedIn Professional Growth Dashboard · sukhada30github · Data collected 2026-11-21 · Open index.html directly, or run <code>python -m http.server</code> in this folder.</footer>
+<script src="app.js"></script>
+</body>
+</html>
